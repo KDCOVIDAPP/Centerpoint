@@ -1,0 +1,9 @@
+{
+    "HOME": {
+      "TITLE": "Daily Health Questionnaire",
+      "BROWSER_PREF": "Browser preference: {{ value }}",
+      "TODAYS_DATE": "Today's date",
+      "A_NUMBER": "A number"
+    }
+  }
+  

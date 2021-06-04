@@ -1,0 +1,116 @@
+.special-change{
+  width: -webkit-fill-available;
+  background: #fff ;
+  padding: 20px 30px;
+  border-radius: 8px;
+  // box-shadow: 1px 1px 10px 1px #b8b8b8;
+  text-align: center;
+}
+.check-css{
+  margin: 0px 50px;
+}
+.check-align{
+  flex: 1;
+}
+.invalid-check{
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.error{
+color: red;
+  display: flex;
+  justify-content: center;
+}
+
+label{
+text-transform: uppercase;
+}
+
+.form-group {
+margin-bottom: 2rem;
+}
+
+.formMargin{
+margin-top: 15px;
+}
+
+.cards{
+margin-bottom: 10px;
+display: flex;
+justify-content: center;
+// padding-left: 3.5rem;
+}
+
+.dashboard-card {
+box-shadow: 0 0px 8px 0 rgba(25, 91, 216, 0.3);
+transition: 0.3s;
+margin: 20px;
+padding: 5px;
+width: 250px;
+}
+.dashboard-card-Acc {
+box-shadow: 0 0px 8px 0 rgba(25, 91, 216, 0.3);
+transition: 0.3s;
+margin: 10px;
+padding: 0px 5px;
+width: 17rem;
+height: 4rem;
+padding-top: 6px;
+}
+.dashboard-card-Acc-head{
+text-align: center;
+font-size: 12px;
+font-weight: 600;
+padding: 8px 0px;
+display: inline;
+text-transform: uppercase;
+}
+.dash-icon-count{
+display: flex;
+padding: 2px 10px;
+display: inline;
+}
+i.fa fa-thermometer-empty.cardPic.dash-icon-count{
+content: "\f007";
+font-size: 20px;
+display: inline;
+}
+.fa-user:before {
+content: "\f007";
+padding: 1px;
+}
+
+.dashboard-card:hover {
+box-shadow: 0 0px 8px 0 rgba(25, 91, 216, 0.5);
+}
+
+.saveTo{
+  display: flex;
+  justify-content: center;
+}
+
+.slidecontainer{
+width: 90%;
+}
+@media screen and (max-width: 280px) {
+.dashboard-card-Acc {
+  box-shadow: 0 0px 8px 0 rgba(25, 91, 216, 0.3);
+  transition: 0.3s;
+  margin: 10px 0px;
+  padding: 0px 5px;
+  width: 17rem;
+  height: 4rem;
+  padding-top: 6px;
+}
+.dashboard-card-Acc-head{
+text-align: center;
+font-size: 12px;
+font-weight: 600;
+padding: 8px 0px;
+display: inline;
+text-transform: uppercase;
+}
+}
