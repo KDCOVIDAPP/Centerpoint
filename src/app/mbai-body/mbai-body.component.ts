@@ -77,6 +77,8 @@ export class MbaiBodyComponent implements OnInit {
       {name: 'Spanish', code: 'es'}
   ]
   selectedLoc: any;
+  days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  dateSpec = new Date();
   constructor(private queSer: QuestionnaireService,private translate: RxTranslation) {
   }
   ngOnInit() {

@@ -1,6 +1,6 @@
 <div *ngIf="employeeVal" class="toolbar" role="banner">
   <!-- <img [hidden]="employeeVal" width="60" alt="MBAI" src="./assets/images/nike.png" /> -->
-  <img width="100" alt="MBAI" src="./assets/images/centerpoint.png" />
+  <img style="filter: invert(1);" width="100" alt="MBAI" src="./assets/images/nike1.png" />
   <!-- <img *ngIf="selectedLoc == 'NIKE-ICON.LA'" width="100" alt="MBAI" src="./assets/images/iconla.png" /> -->
   <div class="spacer"></div>
 </div>
@@ -243,24 +243,26 @@
 <div *ngIf="qrCodeScanner">
   <div #screen class="content content-zoom" style="align-items: center;">
     <div style="text-align: center;" *ngIf="qrData.isCleared">
-      <i class="fa fa-check cleared-css" aria-hidden="true"></i>
+      <i class="fa fa-check-circle cleared-css" aria-hidden="true"></i>
       <h2 class="cleared-text">{{mlc.HOME.CLEARED}}</h2>
     </div>
     <div style="text-align: center;" *ngIf="!qrData.isCleared">
-      <i class="fa fa-times Notcleared-css" aria-hidden="true"></i>
+      <i class="fa fa-times-circle Notcleared-css" aria-hidden="true"></i>
       <h2 class="notCleared-text">{{mlc.HOME.NOT_CLEARED}}</h2>
     </div>
-    <qrcode [qrdata]="qrDataToDisplay" size="180" errorCorrectionLevel="'M'"></qrcode>
+    <!-- <qrcode [qrdata]="qrDataToDisplay" size="180" errorCorrectionLevel="'M'"></qrcode> -->
     <div class="qrUserValues">
       <p>{{mlc.HOME.NAME}} : {{qrData.employeeName}}</p>
       <p *ngIf ="qrData.isCleared">{{mlc.HOME.STATUS}} : {{mlc.HOME.CLEARED}}</p>
       <p *ngIf ="!qrData.isCleared">{{mlc.HOME.STATUS}} : {{mlc.HOME.NOT_CLEARED}}</p>
-      <p>{{mlc.HOME.VALID_TILL}} : {{validUntil}} {{validUntilTimeZone}}</p>
+      <!-- <p>{{mlc.HOME.VALID_TILL}} : {{validUntil}} {{validUntilTimeZone}}</p> -->
+      <p>{{days[dateSpec.getDay()]}} </p>
+      <p>{{dateSpec.toLocaleDateString()}}</p>
     </div>
   </div>
-  <div class="saveTo">
+  <!-- <div class="saveTo">
     <button type="button" class="btn btn-primary custom-save" (click)="downloadjpg()">{{mlc.HOME.SAVE_TO_GALLERY}}</button>
-  </div>
+  </div> -->
   <div id="download" style="display: none;">
     <img #canvas>
     <a #downloadLink></a>
