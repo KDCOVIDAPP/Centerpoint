@@ -29,7 +29,7 @@ import { RxTranslateModule } from '@rxweb/translate';
     QRCodeModule,
     Ng5SliderModule,
     RxTranslateModule.forRoot({cacheLanguageWiseObject:true, cacheActiveLanguageObject:true,  preloadingStrategy:true,
-      filePath:"nikecenter/assets/i18n/{{language-code}}/{{translation-name}}.json",
+      filePath:"assets/i18n/{{language-code}}/{{translation-name}}.json",
       }),
   ],
   providers: [],
