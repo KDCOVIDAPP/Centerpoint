@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main1
+      - main
 
 env:
   AZURE_WEBAPP_NAME: kdcovidappuidev-nikecp    # set this to your application's name
