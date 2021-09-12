@@ -1,5 +1,5 @@
 export class AppConfig {
-  public static API_PATH = 'https://dev.kdcovidapp.com/kdcovidapp/api/v1';
+  public static API_PATH = 'https://kdcovidappservicesdev.azurewebsites.net/webmethods/api/v1';
   public static getLocations = '/admin/dashboard/getlocations';
   public static saveQuestionaire = "/admin/questionnaire/save";
 }
